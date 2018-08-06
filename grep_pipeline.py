@@ -28,3 +28,5 @@ if __name__ == '__main__':
    )
 
    pipeline.run().wait_until_finish()
+
+   print('+')

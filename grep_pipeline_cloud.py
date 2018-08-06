@@ -41,7 +41,7 @@ def run():
       | 'WriteOutput' >> beam.io.WriteToText(output_prefix)
    )
 
-   p.run()
+   pipeline.run()
 
 if __name__ == '__main__':
 

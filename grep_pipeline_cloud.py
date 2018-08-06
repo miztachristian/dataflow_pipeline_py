@@ -19,7 +19,7 @@ def run():
 
    argv = [
       '--project={0}'.format(PROJECT_ID),
-      '--job_name=good_job',
+      '--job_name=goodjob',
       '--save_main_session',
       '--staging_location=gs://{0}/{1}/staging/'.format(BUCKET_ID, BUCKET_FOLDER),
       '--temp_location=gs://{0}/{1}/staging/'.format(BUCKET_ID, BUCKET_FOLDER),

@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
    input = './java/*.java'
 
-   output_prefix = '/tmp/grep_pipeline_output'
+   output_prefix = './tmp/grep_pipeline_output'
 
    search_query = 'import'
 

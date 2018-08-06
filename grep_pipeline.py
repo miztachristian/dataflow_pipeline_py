@@ -22,9 +22,9 @@ if __name__ == '__main__':
    search_query = 'import'
 
    (pipeline
-      | 'GetJava' >> beam.io.ReadFromText(input)
+      | 'GetInput' >> beam.io.ReadFromText(input)
       | 'Grep' >> beam.FlatMap(lambda line: custom_grep(line, search_query))
-      | 'write' >> beam.io.WriteToText(output_prefix)
+      | 'WriteOutput' >> beam.io.WriteToText(output_prefix)
    )
 
    pipeline.run().wait_until_finish()

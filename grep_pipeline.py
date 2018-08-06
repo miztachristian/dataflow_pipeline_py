@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
    pipeline = beam.Pipeline(argv=sys.argv)
 
-   input = '/java/*.java'
+   input = './java/*.java'
 
    output_prefix = '/tmp/grep_pipeline_output'
 

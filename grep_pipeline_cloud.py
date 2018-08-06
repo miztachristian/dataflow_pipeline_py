@@ -28,7 +28,7 @@ def run():
 
    pipeline = beam.Pipeline(argv=argv)
 
-   input = 'gs://{0}/{1}}/input/*.java'.format(BUCKET_ID, BUCKET_FOLDER)
+   input = 'gs://{0}/{1}/input/*.java'.format(BUCKET_ID, BUCKET_FOLDER)
 
    output_prefix = 'gs://{0}/{1}/output'.format(BUCKET_ID, BUCKET_FOLDER)
 
